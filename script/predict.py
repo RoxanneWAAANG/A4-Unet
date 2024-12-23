@@ -1,37 +1,20 @@
-import os
 import torch
 import logging
 import argparse
-import numpy as np
-import torch.nn as nn
-import torch.nn.functional as F
 import torchvision.transforms as transforms
-import torchvision.transforms.functional as TF
-
-from tqdm import tqdm
-from torch import optim
 from pathlib import Path
-from torch.utils.tensorboard import SummaryWriter
-from torch.utils.data import DataLoader, random_split
-
-from unet import UNet
 from evaluate import evaluate
-from utils.dice_score import dice_loss
 from utils.data_loading import BasicDataset, CarvanaDataset
 
 from a4unet.dataloader.bratsloader import BRATSDataset3D
-from a4unet.dataloader.hippoloader import HIPPODataset3D
-from a4unet.dataloader.isicloader import ISICDataset
 from a4unet.a4unet import create_a4unet_model
-from a4unet.lr_scheduler import LinearWarmupCosineAnnealingLR
 
-# dir_img = Path('/home/fyp1/ChengYuxuan/UNetMilesial-MedSegDiff/datasets/test_kfold_inputs/')
-# dir_mask = Path('/home/fyp1/ChengYuxuan/UNetMilesial-MedSegDiff/datasets/test_kfold_masks/')
-
-dir_brats = Path('/root/autodl-tmp/brats21_test/')
-
-dir_checkpoint = Path('/root/autodl-tmp/A4-Unet/checkpoints/')
-dir_tensorboard = Path('/root/tf-logs/')
+# Directory paths for various datasets and logs
+dir_brats = Path('./datasets/brats/2020')
+dir_img = Path('./datasets/isic2018/train')
+dir_mask = Path('./datasets/isic2018/masks')
+dir_checkpoint = Path('./checkpoints')
+dir_tensorboard = Path('./')
 
 
 def validation(model, device, batch_size: int = 1, save_checkpoint: bool = True, img_scale: float = 0.5, amp: bool = False, medsegdiff: bool = False,
