@@ -6,9 +6,9 @@ A4-Unet is a brain tumor segmentation architecture for Medical Image Segmentatio
 
 ## A Quick Overview 
 
-|<img align="center" width="480" height="170" src="https://github.com/WendyWAAAAANG/A4-Unet/blob/dc5b67975d3e44653a23b019c2e71b9af61a1e6d/a4unet.png">|
+<img align="center" width="480" height="170" src="https://github.com/WendyWAAAAANG/A4-Unet/blob/dc5b67975d3e44653a23b019c2e71b9af61a1e6d/a4unet.png">
 
-| **A4-Unet** |
+**A4-Unet** 
 
 ## News
 
