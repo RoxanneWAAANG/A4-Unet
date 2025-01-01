@@ -34,7 +34,6 @@ The overall framework of A4-Unet is structured as follows:
 4. ``pip install -r requirements.txt``
 
 ## Configuration
-We welcome contributions! Please read the Contribute.md file for guidelines on submitting issues and pull requests.
 
 ## Model Checkpoint
 
@@ -64,6 +63,7 @@ This repository accompanies the research paper "A4-Unet: A Brain Tumor Segmentat
 
 
 ## Contributing
+We welcome contributions! Please read the Contribute.md file for guidelines on submitting issues and pull requests.
 
 ## Contact
 For questions, feel free to email or create an issue in this repository.
