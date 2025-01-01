@@ -34,6 +34,7 @@ The overall framework of A4-Unet is structured as follows:
 4. ``pip install -r requirements.txt``
 
 ## Configuration
+We welcome contributions! Please read the Contribute.md file for guidelines on submitting issues and pull requests.
 
 ## Model Checkpoint
 
@@ -48,6 +49,7 @@ If you use A4-Unet in your research, please cite the following:
 }
 
 ## License
+This project is licensed under the MIT License - see the License.md file for details.
 
 ## Ethical Statement
 This repository accompanies the research paper "A4-Unet: A Brain Tumor Segmentation Architecture with Multi-Attention Mechanism" published in IEEE. The following ethical considerations were observed:
@@ -65,9 +67,10 @@ This repository accompanies the research paper "A4-Unet: A Brain Tumor Segmentat
 
 ## Contact
 For questions, feel free to email or create an issue in this repository.
+
 **Author:** Ruoxin Wang, Tianyi Tang, Haiming Du
+
 **Email:** ruoxinwaaang@gmail.com, trumantytang@163.com, jennyduuu@163.com
-**LinkedIn:**
 
 ## Example Cases
 
