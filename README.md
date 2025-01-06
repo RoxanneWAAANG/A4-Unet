@@ -36,6 +36,8 @@ The overall framework of A4-Unet is structured as follows:
 ## Configuration
 
 ## Model Checkpoint
+Click the following link to access model checkpoint:
+https://huggingface.co/Roxanne-WANG/A4-Unet/tree/main
 
 ## Citation
 If you use A4-Unet in your research, please cite the following:
